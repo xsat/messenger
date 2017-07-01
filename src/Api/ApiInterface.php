@@ -13,6 +13,8 @@ interface ApiInterface
     /**
      * @param RecipientInterface $recipient
      * @param MessageInterface $message
+     *
+     * @return array
      */
-    public function send(RecipientInterface $recipient, MessageInterface $message): void;
+    public function send(RecipientInterface $recipient, MessageInterface $message): array;
 }
