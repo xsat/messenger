@@ -10,7 +10,7 @@ use Messenger\Api\Recipient\RecipientInterface;
  */
 class Api implements ApiInterface
 {
-    private const API_URL = 'https://graph.facebook.com/v2.6';
+    private const API_URL = 'https://graph.facebook.com/v2.6/';
 
     /**
      * Allowed types for request

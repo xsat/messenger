@@ -8,16 +8,16 @@ namespace Messenger\Api\Recipient;
 class Id implements RecipientInterface
 {
     /**
-     * @var int
+     * @var string
      */
     private $id;
 
     /**
      * Id constructor.
      *
-     * @param int $id
+     * @param string $id
      */
-    public function __construct(int $id)
+    public function __construct(string $id)
     {
         $this->id = $id;
     }
