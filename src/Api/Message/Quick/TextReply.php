@@ -3,7 +3,7 @@
 namespace Messenger\Api\Message\Quick;
 
 /**
- * Class Reply
+ * Class TextReply
  */
 class TextReply implements ReplyInterface
 {
@@ -23,7 +23,7 @@ class TextReply implements ReplyInterface
      * @param string $title
      * @param string $payload
      */
-    public function __construct($title, $payload)
+    public function __construct(string $title, string $payload)
     {
         $this->title = $title;
         $this->payload = $payload;
@@ -35,6 +35,7 @@ class TextReply implements ReplyInterface
     public function getReply(): array
     {
         return [
+            'content_type' => 'text',
             'title' => $this->title,
             'payload' => $this->payload,
         ];
